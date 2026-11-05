@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eliminar tu cuenta de SEU</title>
+  <meta name="description" content="Pide la eliminación de tu cuenta de SEU sin tener la app instalada.">
+  <link rel="canonical" href="https://seu-landing.netlify.app/eliminar-cuenta">
+  <link rel="icon" href="/img/logo.png" type="image/png">
+  <meta name="theme-color" content="#143D2E">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body class="page">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <a class="brand" href="/" aria-label="SEU, ir al inicio">
+      <img src="/img/logo.png" alt="" width="46" height="46">
+    </a>
+    <nav class="nav" aria-label="Sitio">
+      <a href="/privacidad">Privacidad</a>
+      <a href="/terminos">Términos</a>
+      <a href="/eliminar-cuenta" aria-current="page">Eliminar cuenta</a>
+      <a href="/soporte">Soporte</a>
+    </nav>
+  </header>
+  <main class="sheet" id="contenido">
+    <h1>Eliminar tu cuenta de SEU</h1>
+    <p>Puedes pedir que eliminemos la cuenta de SEU asociada a tu correo. No necesitas tener la app instalada.</p>
+    <h2>Qué se borra en un plazo de 30 días corridos desde la solicitud</h2>
+    <ul>
+      <li>nombre, teléfono, correo y contraseña de la cuenta;</li>
+      <li>la sesión y el acceso a la app;</li>
+      <li>si eras conductor, el documento y el estado de la solicitud, siempre que no haya un deber de conservarlos por un viaje o un pago todavía vigente.</li>
+    </ul>
+    <h2>Qué no se borra de una vez, y por qué</h2>
+    <ul>
+      <li>viajes terminados, recibos y registros de pago: cinco años, como soporte de la operación;</li>
+      <li>chat del viaje y alertas de auxilio: dos años, por seguridad.</li>
+    </ul>
+    <p>Esos registros dejan de estar atados a una cuenta con la que se pueda entrar. No se usan para publicidad.</p>
+    <p>Si tienes un viaje en curso, la eliminación empieza cuando ese viaje termina o se cancela.</p>
+
+    <form class="form" name="eliminar-cuenta" method="POST" action="/eliminar-cuenta/recibido/" data-netlify="true" data-netlify-honeypot="bot-field" data-delete-form>
+      <p class="hp" aria-hidden="true">
+        <label>No llenar este campo <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </p>
+      <input type="hidden" name="form-name" value="eliminar-cuenta">
+      <label>
+        Correo de la cuenta
+        <input type="email" name="correo" autocomplete="email" required>
+      </label>
+      <label>
+        Nombre
+        <input type="text" name="nombre" autocomplete="name" required>
+      </label>
+      <label>
+        Mensaje
+        <textarea name="mensaje" placeholder="Quiero eliminar mi cuenta"></textarea>
+      </label>
+      <label class="check">
+        <input type="checkbox" name="confirmacion" value="si" required>
+        <span>Entiendo qué datos se borran y cuáles se conservan el tiempo indicado</span>
+      </label>
+      <button class="btn" type="submit">Enviar solicitud</button>
+    </form>
+    <p class="ok" data-delete-done hidden tabindex="-1">Recibimos tu solicitud. Te escribiremos a ese correo. El plazo máximo es de 30 días corridos.</p>
+  </main>
+  <footer class="footer">
+    <p>[RAZÓN SOCIAL] — NIT [NIT]</p>
+    <p>[DIRECCIÓN], [CIUDAD]</p>
+    <p><a href="mailto:[CORREO]">[CORREO]</a></p>
+    <p>SEU no está dirigida a menores de 18 años.</p>
+  </footer>
+  <script src="/js/eliminar-cuenta.js"></script>
+</body>
+</html>

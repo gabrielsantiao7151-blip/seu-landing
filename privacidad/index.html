@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad de SEU</title>
+  <meta name="description" content="Política de privacidad de la app SEU: cuenta, viajes, ubicación, chat y derechos.">
+  <link rel="canonical" href="https://seu-landing.netlify.app/privacidad">
+  <link rel="icon" href="/img/logo.png" type="image/png">
+  <meta name="theme-color" content="#143D2E">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body class="page">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <a class="brand" href="/" aria-label="SEU, ir al inicio">
+      <img src="/img/logo.png" alt="" width="46" height="46">
+    </a>
+    <nav class="nav" aria-label="Sitio">
+      <a href="/privacidad" aria-current="page">Privacidad</a>
+      <a href="/terminos">Términos</a>
+      <a href="/eliminar-cuenta">Eliminar cuenta</a>
+      <a href="/soporte">Soporte</a>
+    </nav>
+  </header>
+  <main class="sheet" id="contenido">
+    <h1>Política de privacidad de SEU</h1>
+    <p class="updated">Última actualización: <time datetime="2026-11-04">4 de noviembre de 2026</time></p>
+    <p>[RAZÓN SOCIAL], identificada con NIT [NIT] y domicilio en [DIRECCIÓN], [CIUDAD], es quien responde por los datos personales que recoge la app SEU. Correo: <a href="mailto:[CORREO]">[CORREO]</a>.</p>
+    <p>SEU sirve para pedir un viaje, recibirlo como conductor y hacer el seguimiento de ese viaje. No es una red social, no muestra publicidad de terceros y no está dirigida a menores de 18 años. No hay módulo infantil.</p>
+
+    <h2>Qué datos recogemos</h2>
+    <p>Cuenta. Nombre, correo, contraseña (solo guardamos un hash, no la clave en claro), teléfono, país y ciudad. Si pides ser conductor, también el número de documento y el estado de esa solicitud (pendiente, aprobado, rechazado, suspendido o inactivo).</p>
+    <p>Viaje. Origen y destino (dirección y coordenadas), ciudad, categoría del vehículo, distancia y duración que envía la app, tarifa sugerida y tarifa acordada, método de pago (efectivo o pago en línea), estado del viaje, recibo y, si se cancela, el motivo.</p>
+    <p>Ubicación precisa. La usamos cuando hace falta para el servicio:</p>
+    <ul>
+      <li>para convertir tu posición en una dirección de origen, si tú lo pides;</li>
+      <li>si eres conductor y te conectas, para mostrar viajes cerca y para que el mapa del viaje tenga tu punto;</li>
+      <li>durante el viaje asignado, el conductor envía la posición cada pocos segundos y el pasajero la ve;</li>
+      <li>si alguien usa el botón de auxilio (SOS), guardamos el punto y la nota para que el administrador la vea.</li>
+    </ul>
+    <p>No pedimos ubicación en segundo plano con la app cerrada. Si más adelante eso cambia, esta política y la ficha de Play se actualizan antes de publicar esa versión.</p>
+    <p>Chat del viaje. Texto, una ubicación que tú eliges enviar y fotos (JPG, PNG o WEBP, hasta 5 MB). La foto se guarda en nuestra base de datos. El otro participante del viaje la puede ver. El administrador de SEU puede leer el chat y cerrarlo. No hay chat con comercios ni con un bot.</p>
+    <p>Calificación. Nota de 1 a 5, comentario opcional y motivos de una lista (por ejemplo puntualidad o vehículo limpio).</p>
+    <p>Pago. Registramos si el viaje fue en efectivo o por pasarela, el valor y el estado del cobro. En esta versión no guardamos número de tarjeta ni billetera. El pago en línea permanece apagado hasta que haya un proveedor configurado. Cuando se encienda, el cobro lo hace ese proveedor y su nombre se agrega a esta página.</p>
+    <p>Auxilio. El SOS no llama a la policía ni al 123. Solo crea una alerta interna con la coordenada.</p>
+
+    <h2>Para qué los usamos</h2>
+    <p>Para crear la cuenta, cotizar, buscar conductor, mostrar el mapa del viaje, el chat, el recibo, la calificación y las alertas de seguridad. También para calcular la comisión del viaje y, en efectivo, la comisión que queda anotada al conductor. No vendemos datos. No los usamos para publicidad de terceros.</p>
+
+    <h2>Con quién se comparten</h2>
+    <p>Con la otra persona del viaje: el pasajero ve el nombre del conductor, su calificación y la placa; el conductor ve el nombre del pasajero y su calificación. El teléfono completo lo ve el administrador, no el otro usuario en la ficha del viaje.</p>
+    <p>Con el administrador de la plataforma, que puede ver viajes, mapa, clientes, conductores y el chat.</p>
+    <p>Con encargados que alojan el servicio: la API en Vercel y la base de datos en MongoDB Atlas. Al buscar una dirección, la consulta (y, si la app la envía, una coordenada aproximada para centrar los resultados) sale hacia el proveedor de mapas. Hoy ese proveedor es OpenStreetMap (Nominatim). Si se cambia a Google, esta frase se actualiza.</p>
+    <p>No hay SDK de anuncios ni de analítica en esta versión. Si se agrega uno, se dice aquí qué dato manda y para qué, antes de publicar esa versión.</p>
+
+    <h2>Cuánto tiempo los guardamos</h2>
+    <p>La cuenta sigue mientras esté activa. Si pides eliminarla, aplican los plazos de <a href="/eliminar-cuenta">/eliminar-cuenta</a>.</p>
+    <p>Los viajes terminados, recibos y registros de pago se conservan cinco años, como soporte de la operación. Las alertas de auxilio y los chats de un viaje se conservan dos años. Pasado ese plazo se borran o se dejan de forma que ya no identifiquen a la persona, salvo que una autoridad pida conservarlos.</p>
+
+    <h2>Tus derechos</h2>
+    <p>Puedes conocer, actualizar, rectificar y pedir la supresión de tus datos, y revocar la autorización cuando no exista un deber legal de conservarlos. Escríbenos a <a href="mailto:[CORREO]">[CORREO]</a> o usa <a href="/eliminar-cuenta">/eliminar-cuenta</a>. Respondemos en un plazo máximo de quince días hábiles.</p>
+    <p>La queja ante la Superintendencia de Industria y Comercio sigue disponible. Esta página no la reemplaza.</p>
+
+    <h2>Seguridad</h2>
+    <p>La contraseña no se guarda en claro. El acceso a la API usa un token de corta duración. Nadie puede prometer que un servicio en internet es imposible de vulnerar. Si ocurre un incidente que te afecte, te avisamos por el correo de la cuenta.</p>
+
+    <h2>Cambios</h2>
+    <p>Si esta política cambia, actualizamos la fecha de arriba. Si el cambio es grande (por ejemplo, cobrar con un proveedor nuevo o pedir ubicación en segundo plano), lo verás en la app antes de seguir usándola.</p>
+  </main>
+  <footer class="footer">
+    <p>[RAZÓN SOCIAL] — NIT [NIT]</p>
+    <p>[DIRECCIÓN], [CIUDAD]</p>
+    <p><a href="mailto:[CORREO]">[CORREO]</a></p>
+    <p>SEU no está dirigida a menores de 18 años.</p>
+  </footer>
+</body>
+</html>
