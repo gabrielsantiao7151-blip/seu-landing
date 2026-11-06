@@ -5,5 +5,10 @@
   "ciudad": "[CIUDAD]",
   "correo": "[CORREO]",
   "dominio": "https://seu-landing.netlify.app",
-  "fecha": "4 de noviembre de 2026"
+  "fecha": "4 de noviembre de 2026",
+  "estado": "prelanzamiento",
+  "googlePlay": "",
+  "ciudades": [],
+  "registroConductores": "",
+  "pagos": ["efectivo"]
 }
