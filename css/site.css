@@ -649,6 +649,22 @@ body.page .footer a {
   color: #333;
 }
 
+.notice {
+  margin: 1rem 0 1.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d7e3da;
+  border-radius: 12px;
+  background: #f4f8f5;
+}
+
+.notice p:first-child {
+  margin-top: 0;
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
 body.page .footer {
   border-top: 1px solid #e6e6e6;
   margin-top: 2.5rem;

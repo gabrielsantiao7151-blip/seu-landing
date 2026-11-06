@@ -19,6 +19,7 @@ def main() -> None:
         "[DIRECCIÓN]": config["direccion"],
         "[CIUDAD]": config["ciudad"],
         "[CORREO]": config["correo"],
+        "[TELÉFONO]": config["telefono"],
         "[DOMINIO]": config["dominio"].rstrip("/"),
         "[FECHA]": config["fecha"],
     }
